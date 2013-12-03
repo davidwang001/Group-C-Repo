@@ -1,17 +1,17 @@
 ###The Math
-Let T denote the total catalog duration
-Let tm,n,p denote the pth percentile of writing times to the nth event after an event of magnitude m
-Let Nm denote the number of counts of magnitude M in the catalog
-If we turn on an alarm of length tm,n,p after every event of magnitude M, that “should” capture >p*Nm*n events and contribute Nm*tn,m,p to the total value of Tao. 
-Let eM(t) denote the average number of events in a window of length t after an event of magnitude M
-If we turn in an alarm of length t(M) after every count of magnitude M, we expect to produce N¬m*am(tm) events (ignoring ) and we 
+- Let T denote the total catalog duration
+- Let tm,n,p denote the pth percentile of writing times to the nth event after an event of magnitude m
+- Let Nm denote the number of counts of magnitude M in the catalog
+- If we turn on an alarm of length tm,n,p after every event of magnitude M, that “should” capture >p*Nm*n events and contribute Nm*tn,m,p to the total value of Tao. 
+- Let eM(t) denote the average number of events in a window of length t after an event of magnitude M
+- If we turn in an alarm of length t(M) after every count of magnitude M, we expect to produce N¬m*am(tm) events (ignoring ) and we 
 
 ###Optimization Problem (greedy method)
-Pick tm, m in M to maximize
+#####Pick tm, m in M to maximize
 -	tm is window length; pick a collection of these
 -	M = {3,3.1,3.2,…, 9}
 
-Sum(m in M) Nm am (tm) 
+#####Sum(m in M) Nm am (tm) 
 -	you want expected number of lengths to be as big as possible
 
 s.t. 
